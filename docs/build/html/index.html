@@ -17,19 +17,21 @@
     <link rel="next" title="Installation de Laravel" href="installation.html" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
-    <script type="text/javascript">
-      var password;
-      var pass1 = "yourpassword"; // Changez "yourpassword" par votre mot de passe
-
-      password = prompt("Please enter your password:");
-      if (password !== pass1) {
-        document.body.innerHTML = "<h1>Access Denied</h1>";
-      }
-    </script>
-
 </head>
 <body>
+
+<script type="text/javascript">
+  window.onload = function() {
+    var password;
+    var pass1 = "yourpassword"; // Changez "yourpassword" par votre mot de passe
+
+    password = prompt("Please enter your password:");
+    if (password !== pass1) {
+      document.body.innerHTML = "<h1>Access Denied</h1>";
+    }
+  }
+</script>
+
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
